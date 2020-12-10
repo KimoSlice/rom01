@@ -47,7 +47,7 @@ public class AudioData_AmplitudeBand : MonoBehaviour
     public static float[] _audioBand = new float[8];
     public static float[] _audioBandBuffer = new float[8];
 
-    public float Amplitude, AmplitudeBuffer;
+    public static float Amplitude, AmplitudeBuffer;
 
     float _AmplitudeHighest;
     public float _audioProfile;
