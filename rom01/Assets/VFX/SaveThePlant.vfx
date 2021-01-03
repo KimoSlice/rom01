@@ -259,7 +259,7 @@ VisualEffectResource:
       InitStripAttributes(index, attributes, stripData);\r\n#endif\r\n\t\t\t\r\n\t\t\t{\n\t\t\t   
       VectorFieldForce_267A9( /*inout */attributes.velocity, attributes.mass, attributes.position,
       GetVFXSampler(VectorField_a, samplerVectorField_a), float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),
-      float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1), Intensity_a, (float)0.5, deltaTime_a);\n\t\t\t}\n\t\t\tEulerIntegration(
+      float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1), Intensity_a, (float)1.5, deltaTime_a);\n\t\t\t}\n\t\t\tEulerIntegration(
       /*inout */attributes.position, attributes.velocity, deltaTime_a);\n\t\t\tAge(
       /*inout */attributes.age, deltaTime_a);\n\t\t\tReap(attributes.age, attributes.lifetime, 
       /*inout */attributes.alive);\n\t\t\t\n\r\n\r\n\t\t\tif (attributes.alive)\r\n\t\t\t{\r\n\t\t\t\tattributeBuffer.Store3((index
@@ -290,7 +290,7 @@ VisualEffectResource:
       InitStripAttributes(index, attributes, stripData);\r\n#endif\r\n\t\t\r\n\t\t{\n\t\t   
       VectorFieldForce_267A9( /*inout */attributes.velocity, attributes.mass, attributes.position,
       GetVFXSampler(VectorField_a, samplerVectorField_a), float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),
-      float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1), Intensity_a, (float)0.5, deltaTime_a);\n\t\t}\n\t\tEulerIntegration(
+      float4x4(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1), Intensity_a, (float)1.5, deltaTime_a);\n\t\t}\n\t\tEulerIntegration(
       /*inout */attributes.position, attributes.velocity, deltaTime_a);\n\t\tAge(
       /*inout */attributes.age, deltaTime_a);\n\t\tReap(attributes.age, attributes.lifetime, 
       /*inout */attributes.alive);\n\t\t\n\r\n\t\tattributeBuffer.Store3((index *
@@ -976,7 +976,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 5
           m_Value: 50
         - m_ExpressionIndex: 10
-          m_Value: 0.5
+          m_Value: 1.5
         - m_ExpressionIndex: 19
           m_Value: 3
         - m_ExpressionIndex: 21
@@ -1053,18 +1053,18 @@ VisualEffectResource:
         - m_ExpressionIndex: 2
           m_Value:
             serializedVersion: 2
-            key0: {r: 1, g: 1, b: 1, a: 0}
-            key1: {r: 0.15686275, g: 0, b: 5.992157, a: 1}
-            key2: {r: 5.992157, g: 3.3568628, b: 0.28235295, a: 0.8}
-            key3: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+            key0: {r: 0.9371476, g: 0, b: 4.8301888, a: 0}
+            key1: {r: 2.9960785, g: 1.6784314, b: 0.14117648, a: 1}
+            key2: {r: 0.5, g: 0.5, b: 0.5, a: 0.8}
+            key3: {r: 0, g: 0, b: 0, a: 0}
             key4: {r: 0, g: 0, b: 0, a: 0}
             key5: {r: 0, g: 0, b: 0, a: 0}
             key6: {r: 0, g: 0, b: 0, a: 0}
             key7: {r: 0, g: 0, b: 0, a: 0}
-            ctime0: 0
-            ctime1: 25829
-            ctime2: 39514
-            ctime3: 65535
+            ctime0: 25829
+            ctime1: 39514
+            ctime2: 65535
+            ctime3: 0
             ctime4: 0
             ctime5: 0
             ctime6: 0
@@ -1078,7 +1078,7 @@ VisualEffectResource:
             atime6: 0
             atime7: 0
             m_Mode: 0
-            m_NumColorKeys: 4
+            m_NumColorKeys: 3
             m_NumAlphaKeys: 4
         - m_ExpressionIndex: 20
           m_Value:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":0.0},{"color":{"r":0.1568627506494522,"g":0.0,"b":5.992156982421875,"a":1.0},"time":0.3941252827644348},{"color":{"r":5.992156982421875,"g":3.356862783432007,"b":0.2823529541492462,"a":1.0},"time":0.6029449701309204},{"color":{"r":0.5,"g":0.5,"b":0.5,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.39118027687072756},{"alpha":0.800000011920929,"time":0.8764781951904297},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.9371476173400879,"g":0.0,"b":4.830188751220703,"a":1.0},"time":0.3941252827644348},{"color":{"r":2.9960784912109377,"g":1.6784313917160035,"b":0.1411764770746231,"a":1.0},"time":0.6029449701309204},{"color":{"r":0.5,"g":0.5,"b":0.5,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.39118027687072756},{"alpha":0.800000011920929,"time":0.8764781951904297},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -3888,7 +3888,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 1.5
     m_Space: 2147483647
   m_Property:
     name: Drag
